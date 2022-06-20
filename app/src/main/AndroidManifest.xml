@@ -22,7 +22,8 @@
         <activity
             android:name=".FirstActivity"
             android:exported="true"
-            android:label="第一行代码">
+            android:label="第一行代码"
+            >
             <intent-filter>
 
                 <!-- 主页面注册 -->
@@ -33,7 +34,8 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:exported="true">
+            android:exported="true"
+            >
 
             <!-- 隐式intent -->
             <intent-filter>

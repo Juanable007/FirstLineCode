@@ -13,13 +13,15 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.first_layout.*
 import java.util.function.Consumer
 
-class FirstActivity : AppCompatActivity() {
+class FirstActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("FirstActivity", this.toString())
+        Log.d("FirstActivity", "Task id is $taskId") //打印任务id
         super.onCreate(savedInstanceState)
         setContentView(R.layout.first_layout)
 //        val button1: Button = findViewById(R.id.button1)
 //        toast提示工具使用
-        button1.setOnClickListener { Toast.makeText(this, "button1被搞了", Toast.LENGTH_LONG).show() }
+//        button1.setOnClickListener { Toast.makeText(this, "button1被搞了", Toast.LENGTH_LONG).show() }
 
         /*   button1.setOnClickListener {
                println("我背搞了被报告了b")
@@ -68,13 +70,24 @@ class FirstActivity : AppCompatActivity() {
 
         //回传数据
 
-        button1.setOnClickListener {
-                   val intent = Intent(this, SecondActivity::class.java)
-                   val data = "123131232131313123131 "
-                   intent.putExtra("extra_data", data)
+        /* button1.setOnClickListener {
+                    val intent = Intent(this, SecondActivity::class.java)
+                    val data = "123131232131313123131 "
+                    intent.putExtra("extra_data", data)
 
-                   startActivityForResult(intent,1)
-               }
+                    startActivityForResult(intent,1)
+                }*/
+
+
+//        active启动模式
+
+        button1.setOnClickListener {
+
+            val intent = Intent(this, SecondActivity::class.java)
+
+            startActivity(intent)
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
