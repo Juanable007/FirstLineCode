@@ -8,4 +8,9 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
     }
+
+    override fun onStart() {
+        super.onStart()
+        println("onstart执行-----------!")
+    }
 }

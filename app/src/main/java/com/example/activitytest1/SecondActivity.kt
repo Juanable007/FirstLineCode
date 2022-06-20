@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.second_layout.*
 
 class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        println("second oncreate执行----")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.second_layout)
         val ac = intent.getStringExtra("extra_data")
@@ -33,6 +34,11 @@ class SecondActivity : AppCompatActivity() {
 
         setResult(RESULT_OK, intent)
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        println("second onstart执行_-------")
     }
 
 }
