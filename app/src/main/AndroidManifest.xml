@@ -11,19 +11,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Activitytest1">
         <activity
+            android:name=".FrageMentLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForthActivity"
+            android:exported="false" />
+        <activity
             android:name=".ThirdActivity"
             android:exported="true">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="tel" />
             </intent-filter>
         </activity>
         <activity
             android:name=".FirstActivity"
             android:exported="true"
-            android:label="第一行代码"
-            >
+            android:label="第一行代码">
             <intent-filter>
 
                 <!-- 主页面注册 -->
@@ -34,8 +41,7 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:exported="true"
-            >
+            android:exported="true">
 
             <!-- 隐式intent -->
             <intent-filter>

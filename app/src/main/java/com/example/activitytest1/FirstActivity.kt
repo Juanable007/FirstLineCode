@@ -10,7 +10,9 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_forth.*
 import kotlinx.android.synthetic.main.first_layout.*
+import kotlinx.android.synthetic.main.first_layout.button1
 import java.util.function.Consumer
 
 class FirstActivity : BaseActivity() {
@@ -81,10 +83,23 @@ class FirstActivity : BaseActivity() {
 
 //        active启动模式
 
-        button1.setOnClickListener {
+//        button1.setOnClickListener {
+//
+//            val intent = Intent(this, SecondActivity::class.java)
+//
+//            startActivity(intent)
+//        }
 
-            val intent = Intent(this, SecondActivity::class.java)
 
+
+//        edittext点击事件传值
+    /*    button1.setOnClickListener{
+            val text = editText.text
+            Toast.makeText(this,text, Toast.LENGTH_LONG).show()
+        }
+*/
+        button1.setOnClickListener{
+            val intent= Intent(this ,ForthActivity::class.java )
             startActivity(intent)
         }
 
