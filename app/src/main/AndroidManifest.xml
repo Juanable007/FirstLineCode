@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Activitytest1">
         <activity
+            android:name=".TopLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".FrageMentLayoutActivity"
             android:exported="false" />
         <activity

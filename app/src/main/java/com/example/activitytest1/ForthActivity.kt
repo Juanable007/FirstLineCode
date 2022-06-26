@@ -9,7 +9,7 @@ class ForthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forth)
-
+        supportActionBar?.hide()
         button1.setOnClickListener {
 
             startActivity(Intent(this,FrageMentLayoutActivity::class.java))

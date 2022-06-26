@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "Activitytest1"
 include ':app'
 include ':activitylifestyle'
+include ':listviewtest'
+include ':recycleviewtest'
