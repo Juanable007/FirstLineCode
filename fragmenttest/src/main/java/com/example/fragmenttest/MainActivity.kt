@@ -15,17 +15,13 @@ class MainActivity : AppCompatActivity() {
         }
         replaceFragment(Right_Fragement())
 
-
-        val fragment = supportFragmentManager.findFragmentById(R.id.leftFrag)
-        val value = leftFrag as Left_Fragement
-        val activity = value.activity
     }
 
     //将fragment添加到返回栈中,可以返回当前fragment
     private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()
-        transaction.replace(R.id.rightLayout, fragment)
+//        transaction.replace(R.id.rightLayout, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
