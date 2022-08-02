@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.servicetest">
+    package="com.example.servicebestpractice">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Activitytest1">
+        android:theme="@style/Theme.Activitytest1"
+        android:usesCleartextTraffic="true"
+
+        >
         <service
-            android:name=".MyService"
+            android:name=".DownloadService"
             android:enabled="true"
             android:exported="true"></service>
-        <!--        enable 启用 ,  exported 暴露服务-->
 
         <activity
             android:name=".MainActivity"

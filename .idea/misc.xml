@@ -31,10 +31,12 @@
         <entry key="fragmenttest/src/main/res/layout/another_right_fragment.xml" value="0.14026236125126135" />
         <entry key="listviewtest/src/main/res/layout/activity_main.xml" value="0.28958333333333336" />
         <entry key="listviewtest/src/main/res/layout/fruit_item.xml" value="0.15625" />
+        <entry key="networktest/src/main/res/layout/activity_main.xml" value="0.21875" />
         <entry key="notificationtest/src/main/res/layout/activity_main.xml" value="0.296875" />
         <entry key="notificationtest/src/main/res/layout/activity_notification.xml" value="0.1437941473259334" />
         <entry key="recycleviewtest/src/main/res/layout/activity_main.xml" value="0.28958333333333336" />
         <entry key="recycleviewtest/src/main/res/layout/fruit_item.xml" value="0.28958333333333336" />
+        <entry key="servicebestpractice/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="servicetest/src/main/res/layout/activity_main.xml" value="0.21875" />
       </map>
     </option>
